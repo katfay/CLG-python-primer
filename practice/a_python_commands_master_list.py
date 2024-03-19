@@ -62,6 +62,15 @@ append()
 # function to add only 1 item to the end of a list
 # e.g. pets = ['ants', 'bird', 'cat', 'dog']; pets.append('Duncan'); print(pets) [prints: ['ants', 'bird', 'cat', 'dog', 'Duncan']]
 
+count()
+# count the number of occurrences of an element in a list using count()
+# e.g. ratings = [2, 3, 1, 4, 3.5, 2, 2]; print(ratings.count(3.5)); [prints [1]]
+
+
+del
+# function to delete one or multiple list items
+# pets = ['ants', 'bird', 'cat', 'dog']; del pets[0:2]; print(pets) [prints: ['cat', 'dog']]
+
 extend()
 # add one list to another list; pass the additional list as a parameter
 # e.g. pets = ['ants', 'bird', 'cat', 'dog']; farm_animals = ['sheep', 'goat', 'cows']; pets.extend(farm_animals); print(pets) [prints: ['ants', 'bird', 'cat', 'dog', 'sheep', 'goat', 'cows']]
@@ -69,6 +78,11 @@ extend()
 f
 # INSERT A VARIABLE INTO STRING using an f-string (in conjunction with braces/squiggly brackets)
 # e.g. variable = kat; print(f("My name is {variable}")) [prints: "My name is kat"]
+
+find()
+# use the find() method to search for substrings in a string using the find() method. It returns the index of the first occurrence of the substring
+# e.g. email = 'bing@outlook.com'; domain_index = email.find('outlook.com'); print(domain_index) [prints: '5']
+# note if substring is not found, find() method returns -1
 
 in
 # in operator - for lists
@@ -80,11 +94,16 @@ input()
 insert()
 # function to add an item to the middle of a list
 # e.g. pets = ['ants', 'bird', 'cat', 'dog']; pets.insert(1, 'Duncan'); print(pets) [prints: ['ants', 'Duncan', 'bird', 'cat', 'dog']]
+isalpha()
+# isalpha() method checks if a string contains only letters 
+# e.g. a = "abcd"; b = " "; c = "12fad"; d = "apple orange"; print(a.isalpha()); print(b.isalpha()); print(c.isalpha()); print(d.isalpha()); [prints: True, False, False, False]
+
 
 len 
 # function
-# print the LENGTH of string
+# print the LENGTH of string or list (number of elements in that list)
 # e.g. print(len("parameter")) [prints: 9]
+# e.g. pets = ["Duncan", "Chessie", "Eric", "fish"]; print(len(pets)); [prints: [4]]
 
 .lower()
 # print the variable in LOWER CASE
@@ -111,7 +130,7 @@ or
 # checks if at least ONE of the values on the left or right is true
 # e.g. variable = True or False; print(variable) [prints: True]
 # e.g. variable = False or False; print(variable) [prints: False]
-
+ 
 pop()
 # function to remove an element from a list and return it individually
 # note this function removes the popped item from the original list. Next time you print the original list, it won't contain that popped item.
@@ -122,6 +141,19 @@ print()
 # PRINT
 # write text output to the console 
 
+remove()
+# function to remove 1 x list element only 
+# e.g. pets = ['ants', 'bird', 'cat', 'dog']; pets.remove('cat'); print(pets) [prints: 'ants', 'bird', 'dog']
+
+# replace() method
+# replace one substring with another, 1st argument is substring you want replaced, 2nd argument is substring you want to replace the 1st with
+# e.g. email = 'bing@outlook.com'; gmail = email.replace('outlook.com', 'gmail.com'); print(gmail) [prints: 'bing@gmail.com']
+
+reverse()
+# reverse sort a list of numbers or str from its existing state 
+# e.g. numbers = [12, 3, -3, -3.45, 0, 192]; numbers.reverse(); print(numbers) [prints: [12, 3, -3, -3.45, 0, 192]]
+# e.g. pets = ["Duncan", "Chessie", "Eric", "fish"]; print(pets); pets.reverse(); print(pets) [prints: ['fish', 'Eric', 'Chessie', 'Duncan']]
+
 # slice notation - pets[1:3] = ['Duncan', 'dog2']
 # replaces multiple list items 
 # e.g. pets = ['bird', 'cat', 'dog', 'canary', 'fish', 'horse']; pets[1:3] =['Duncan', 'dog2']; print(pets) [prints: 'bird', 'Duncan', 'dog2', 'canary', 'fish', 'horse']
@@ -130,9 +162,19 @@ print()
 # print the elements from the start index up to and not including the stop index 
 # e.g. sale = ['hat', 'bathers', 'surfboard', 'hair wax', 'sunscreen', 'wetsuit', 'drinkbottle', 'snacks']; print(sale[1:3]) [prints: bathers, surfboard] 
 
-remove()
-# function to remove 1 x list element only 
-# e.g. pets = ['ants', 'bird', 'cat', 'dog']; pets.remove('cat'); print(pets) [prints: 'ants', 'bird', 'dog']
+sort()
+# sort list of numbers in asc numerical order; sort list of strings in alpha order 
+# e.g. numbers = [12, 3, -3, -3.45, 0, 192]; numbers.sort(); print(numbers) prints: [[-3.45, -3, 0, 3, 12, 192]]
+# e.g. pets = ["Duncan", "Chessie", "Eric", "fish"]; pets.sort(); print(pets) [prints: ['Chessie', 'Duncan', 'Eric', 'fish']]
+
+# string indexes
+# get individual characters from a string by using indexes
+# e.g. title = 'Duncan is great'; print(title[4]) [prints: 'a']
+
+# string slice notation
+# slice a string and return the sliced portion
+# e.g. title = 'Duncan is great'; print(title[-5:]) [prints: 'great']
+# e.g. print(title[0:6]) [prints: 'Duncan']``
 
 type()
 # identifies the type of data (string, integer, float, boolean)

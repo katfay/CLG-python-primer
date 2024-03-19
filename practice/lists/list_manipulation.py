@@ -46,10 +46,10 @@ print(pets)
 # remove list elements
 
 pets = ['ants', 'bird', 'cat', 'dog']
-farm_animals = ['sheep', 'goat', 'cows']
 
 pets.remove('cat')
 print(pets)
+# prints: ['ants', 'bird', 'dog']
 
 
 # pop()
