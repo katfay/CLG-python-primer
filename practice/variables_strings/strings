@@ -1,0 +1,32 @@
+# Creating a variable for mobile
+mobile = "0420 774 413"
+
+#Printing the length of the string of the variable called mobile
+print(len(mobile))
+
+
+#Printing the length of the string
+print(len("   "))
+
+#Printing the string multiplied by an integer of 10
+print(10 * "yeah!")
+
+#Printing the string multiplied by an integer of 3
+print(3 * "Hello")
+
+#Printing the variable mobile multiplied by an integer of 20
+print(20 *' $mobile ')
+
+#Use triple quotes (""") to create a variable using a multiline sentence
+multiline_sencence = """ This
+sentence
+spills over
+several
+lines"""
+
+print(multiline_sencence)
+
+#use a line break (\n) 
+print("Here \n is a line \n break")
+
+print(len(303))
